@@ -1,0 +1,8 @@
+# python setuptools files
+*.egg-info
+
+# python virtualenv
+env/
+
+# vim swap files
+*.swp
