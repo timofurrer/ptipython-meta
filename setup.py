@@ -9,7 +9,7 @@ from setuptools import setup
 
 setup(
     name="ptipython",
-    version="1.0.0",
+    version="1.0.1.dev0",
     license="MIT",
 
     description="Metapackage to install ptpython and ipython.",
@@ -19,11 +19,18 @@ setup(
 
     url="https://github.com/timofurrer/ptipython-meta",
 
-    include_package_data=True,
+    python_requires=">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*",
 
     install_requires=[
-        "ptpython",
-        "ipython"
+        # Python 2.7
+        "ipython<6; python_version=='2.7'",
+        "ptpython<2; python_version=='2.7'",
+        # Python 3.4
+        "ipython<7; python_version=='3.4'",
+        "ptpython<2; python_version=='3.4'",
+        # Python 3.5+
+        "ipython; python_version>='3.5'",
+        "ptpython; python_version>='3.5'",
     ],
 
     keywords=[
