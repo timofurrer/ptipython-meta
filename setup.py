@@ -9,7 +9,7 @@ from setuptools import setup
 
 setup(
     name="ptipython",
-    version="1.0.1.dev0",
+    version="1.0.1",
     license="MIT",
 
     description="Metapackage to install ptpython and ipython.",
