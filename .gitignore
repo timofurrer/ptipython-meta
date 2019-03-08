@@ -1,8 +1,12 @@
 # python setuptools files
 *.egg-info
+dist/
 
 # python virtualenv
 env/
 
 # vim swap files
 *.swp
+
+# tox workdir
+.tox/
